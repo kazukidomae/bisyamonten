@@ -1,0 +1,171 @@
+﻿@CHARSET "UTF-8";
+
+/*左ドロワーメニュー*/
+/*メニュー部分*/
+#leftdrawer {
+	background:rgba(45,45,45, 0.5); /*メニュー背景色*/
+	box-sizing: border-box;
+	height: 600px;
+	padding: 10px 40px; /*メニュー内部上下左右余白*/
+	position: fixed;
+	top : 140px;
+	left: -300px; /*メニュー横幅①と合わせる*/
+	transition: transform 0.3s linear 0s; /*0.3s は変化するのにかかる時間*/
+	width: 300px; /*メニュー横幅①*/
+	z-index: 1000;
+}
+#leftdrawer ul{
+	width : 250px;
+	height : 570px;
+	overflow-y : scroll;
+}
+/*メニュー内*/
+#leftdrawer li img{
+	width : 200px;
+	height : 70px;
+	padding: 10px;
+}
+/*メニューアイコン*/
+#leftdrawer::before {
+	background-color: #a99977; /*ボタン部分背景色*/
+	border-radius: 0 10px 10px 0; /*左下角丸*/
+	color: #000;
+	content: "≡";
+	display: block;
+	font-size: 50px;
+	height: 50px;
+	line-height: 50px; /*縦位置中央化*/
+	position: absolute;
+	left: 100%;
+	text-align: center;
+	top: 0;
+	width: 50px;
+}
+/*hover 時の処理*/
+#leftdrawer:hover {
+	transform: translate(300px); /*メニュー横幅①と合わせる*/
+}
+/*左ドロワー2*/
+/*メニュー部分*/
+#leftdrawer2 {
+	background:rgba(45,45,45, 0.5); /*メニュー背景色*/
+	box-sizing: border-box;
+	height: 500px;
+	padding: 10px 40px; /*メニュー内部上下左右余白*/
+	position: fixed;
+	top : 200px;
+	left: -300px; /*メニュー横幅①と合わせる*/
+	transition: transform 0.3s linear 0s; /*0.3s は変化するのにかかる時間*/
+	width: 300px; /*メニュー横幅①*/
+	z-index: 1000;
+
+}
+
+#leftdrawer2 ul{
+	width : 250px;
+	height : 470px;
+	overflow-y : scroll;
+}
+
+#leftdrawer2 ul li input[type="button"] {
+	width : 200px;
+	font-size: 25px;
+	border: none;
+	margin : 10px;
+	text-align: center;
+	border-radius : 10px;
+	list-style : none;
+	/*明朝体指定*/
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif;
+}
+
+
+/*メニューアイコン*/
+#leftdrawer2::before {
+	background-color: #a99977; /*ボタン部分背景色*/
+	border-radius: 0 10px 10px 0; /*左下角丸*/
+	color: #000;
+	content: "≡";
+	display: block;
+	font-size: 50px;
+	height: 50px;
+	line-height: 50px; /*縦位置中央化*/
+	position: absolute;
+	left: 100%;
+	text-align: center;
+	top: 0;
+	width: 50px;
+}
+/*hover 時の処理*/
+#leftdrawer2:hover {
+	transform: translate(300px); /*メニュー横幅①と合わせる*/
+}
+
+/*下ドロワーメニュー*/
+/*メニュー部分*/
+#bottomdrawer {
+	background:rgba(45,45,45, 0.5); /*メニュー背景色*/
+	box-sizing: border-box;
+	height: 300px;
+	position: fixed;
+	bottom : -300px;/*メニュー縦幅①と合わせる*/
+	transition: transform 0.3s linear 0s; /*0.3s は変化するのにかかる時間*/
+	width: 100%; /*メニュー横幅①*/
+	z-index: 1000;
+}
+/**/
+#sizearea li{
+	float : left;
+	width : 20%;
+	color : #fff;
+	font-size : 50px;
+	text-align: center;
+}
+/*メニュー内*/
+#bottomdrawer li img{
+	width : 20%;
+	height : 200px;
+	//padding: 10px;
+	float : left;
+}
+/*メニューアイコン*/
+#bottomdrawer::before {
+	background-color: #a99977; /*ボタン部分背景色*/
+	border-radius: 10px 10px 0 0; /*左下角丸*/
+	color: #000;
+	content: "≡";
+	display: block;
+	font-size: 50px;
+	height: 50px;
+	line-height: 50px; /*縦位置中央化*/
+	position: absolute;
+	top: -50px;
+	left : 1290px;
+	text-align: center;
+	width: 100px;
+}
+/*hover 時の処理*/
+#bottomdrawer:hover {
+	transform: translateY(-280px); /*メニュー横幅①と合わせる*/
+}
+
+
+/*透過背景部分*/
+#menu-background {
+	background-color: #333; /*黒背景部分背景色*/
+	display: block;
+	height: 100%;
+	opacity: 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	transition: all 0.3s linear 0s; /*0.3s は変化するのにかかる時間*/
+	width: 100%;
+	z-index: -1;
+}
+
+
+#leftdrawer:hover +#bottomdrawer:hover+ #menu-background {
+	opacity: 0.5; /*黒背景部分透過度*/
+	z-index: 999;
+}

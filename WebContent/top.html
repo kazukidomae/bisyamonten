@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+
+		<!-- css読み込み -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/jquery.skippr.css">
+		<link rel="stylesheet" href="./css/nav.css" type="text/css" />
+
+		<!-- javascript読み込み -->
+		<script src="js/jquery-1.11.0.min.js"></script>
+		<script src="js/jquery.skippr.js"></script>
+		<title>痛車屋 美車紋店</title>
+	</head>
+
+	<body>
+
+		<!-- ヘッダー -->
+		<header>
+			<!-- ロゴ -->
+			<a href="top.html"><img src="image/rogo.png"></a>
+			<!-- 仮ログアウトボタン -->
+			<form action="MainPage" method="post">
+				<input type="submit" name="S_Logout" value="ログアウト" />
+			</form>
+			<!-- グローバルナビ -->
+			<nav class="navigation_wrapper">
+				<!-- デザイン用ボックス -->
+				<div></div>
+				<!-- メニュー -->
+				<ul class="navigation">
+					<li><a href="top.html">トップ</a></li>
+					<li><a href="design.jsp">デザイン</a></li>
+					<li><a href="gallery">ギャラリー</a></li>
+					<li><a href="mypage">マイページ</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- スライダーエリア -->
+		<div class="slider">
+			<div id="theTarget">
+				<div style="background-image: url(image/slider1.png)"></div>
+				<div style="background-image: url(images/image2.jpg)"></div>
+				<div style="background-image: url(images/image3.jpg)"></div>
+			</div>
+		</div>
+
+		<!-- 更新情報カラム -->
+		<div class="news">
+			<p></p>
+		</div>
+
+		<!-- Twitter -->
+		<div class="twitter">
+			<a class="twitter-timeline"  href="https://twitter.com/search?q=%40bisyamounten" data-widget-id="821239604820877313">
+				@bisyamountenに関するツイート
+			</a>
+			<script>
+				!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+			</script>
+		</div>
+
+		<!-- フッター -->
+		<footer>
+			<p>&copy;2017 湘南爆走族</p>
+		</footer>
+
+		<!-- スライドスクリプト  -->
+		<script>
+		$(document).ready(function(){
+		            $("#theTarget").skippr();
+		        });
+
+		$("#theTarget").skippr({
+		    // スライドタイプ ("fade" or "slclasse")
+		    transition :'fade',
+		    // 次のスライドまでの移行時間(単位ミリ秒)
+		    speed : 1000,
+		    // イージングの種類(http://easings.net/ja)
+		    easing :'easeOutQuart',
+		    // ナヴ・タイプ("block" or "bubble")
+		    navType :'bubble',
+		    // 子要素の種類("div" or "img")
+		    childrenElementType :'div',
+		    // 矢印の表示有無(trueで表示)
+		    arrows :false,
+		    // スライドショーの自動再生
+		    autoPlay :true,
+		    // 自動再生時のスライド移行時間(単位ミリ秒)
+		    autoPlayDuration : 10000,
+		    // 矢印キーの有効化
+		    keyboardOnAlways :false,
+		    // 一枚目のスライドに戻る矢印の表示の有無
+		    hclassePrevious :false,
+		});
+		</script>
+	</body>
+</html>

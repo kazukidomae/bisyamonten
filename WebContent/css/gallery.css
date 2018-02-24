@@ -1,0 +1,53 @@
+@CHARSET "UTF-8";
+
+body{
+	background-image : url("../image/backimg.jpg");
+}
+li {
+	list-style : none;
+}
+a {
+	text-decoration : none;
+}
+/*コンテンツエリア設定*/
+.thumbnail_wrapper {
+	width: 1200px;
+	margin: 0 auto;
+}
+.thumbnail{
+	/*margin: 0 auto;*/
+}
+/*サムネイル表示エリア*/
+.thumbnail ul{
+}
+.thumbnail li {
+	width : 300px;
+	margin : 40px 40px;
+	float : left;
+	background : #000;
+	border : solid 10px #a99977;
+}
+.thumbnail li img {
+	width : 300px;
+	height : 191px;
+}
+/*ページ番号設定*/
+.txt_navi {
+	width : 600px;
+	clear : both;
+	margin: 0 auto;
+}
+
+/*各ボタン設定*/
+.txt_navi li{
+	display: inline;
+	margin : 0 10px;
+	font-size: 100%;
+	background : #a99977;
+}
+
+.txt_navi li a{
+	color : #000;
+	width : 50px;
+	margin : 0 10px;
+}

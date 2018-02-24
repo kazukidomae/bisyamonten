@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+
+/*全体設定*/
+#wapper {
+	background : #595757;
+	margin: 50px auto;
+	padding : 10px;
+	color : #fff;
+	width : 1200px;
+}
+/*確認文章*/
+#wapper h1{
+	font-size : 25px;
+}
+/*変更内容*/
+#wapper ul li{
+
+	font-size : 20px;
+}
+/*ボタン設定*/
+#wapper input[type="submit"] {
+	background : #a99977;
+	border: none;
+	color: #000;
+	font-weight: bold;
+	height: 40px;
+	line-height: 40px;
+	width: 150px;
+	margin : 10px;
+	display: block;/*ブロック要素として表示する*/
+	margin: 0 auto;/*センターに表示*/
+	text-align: center;
+	border-radius : 10px;
+	cursor: pointer;/*カーソルの変更*/
+	outline:none;/*クリック時の枠線を消す*/
+}
+
+/*マウスオーバー時の処理*/
+#wapper input[type="submit"]:hover {
+	background: #8a8b8c;
+	cursor: pointer ;
+}

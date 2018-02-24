@@ -1,0 +1,108 @@
+@CHARSET "UTF-8";
+
+body{
+	background-image : url("../image/backimg.jpg");
+}
+
+/*ヘッダーロゴ*/
+header img{
+	width : 225px;
+	height : 60px;
+	padding : 15px;
+}
+/*ログイン中のユーザー表示エリア*/
+#loginuser {
+	float : right;
+	font-size : 20px;
+	color: #ffffff;
+	padding : 20px;
+	/*明朝体指定*/
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif;
+}
+/*ログアウトボタン*/
+#logout {
+	background: #a99977;
+	border: none;
+	color: #000;
+	font-weight: bold;
+	height: 40px;
+	line-height: 40px;
+	width: 100px;
+	display: block;/*ブロック要素として表示する*/
+	text-align: center;
+	border-radius : 10px;
+	cursor: pointer;/*カーソルの変更*/
+	outline:none;/*クリック時の枠線を消す*/
+	position: absolute;
+	top: 18px;
+	left: 1150px;
+	clear: both;
+	/*明朝体指定*/
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif;
+
+}
+#logout:hover{
+	background: #b2b2b2;
+}
+
+#message {
+	width : 1200px;
+	margin : 0 auto;
+	clear: both;
+}
+#message p {
+	font-size : 40px;
+	margin : 0 auto;
+	padding : 10px;
+	color: #ffffff;
+}
+
+/*グローバルメニュー*/
+.navigation_wrapper {
+	position: relative;
+ 	left: -15px;
+    width: 100%;
+}
+/*デザイン用ボックス*/
+.navigation_wrapper div{
+	float : left;
+	width: 64%;
+	height : 32px;
+	margin : 0 2.5px 0 0;
+	background: #a99977;
+	/*平行四辺形指定*/
+	transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -webkit-transform: skew(-20deg);
+}
+/*メニュー*/
+.navigation li {
+	float : left;
+	width: 8.24%;
+	margin : 0 2.5px;
+	padding : 2.5px;
+	/*明朝体指定*/
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif;
+	text-align : center;
+	vertical-align: middle;
+	list-style : none;
+	background: #a99977;
+	/*平行四辺形指定*/
+	transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -webkit-transform: skew(-20deg);
+}
+/*マウスオーバーアクション*/
+.navigation li:hover{
+	background: #b2b2b2;
+}
+/*メニュー内テキスト*/
+.navigation li a {
+	text-decoration: none;
+	font-size : 100%;
+	font-weight : bold;
+	color : #000;
+}
+

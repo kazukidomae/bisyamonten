@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="./css/input.css" rel="stylesheet" type="text/css" />
+<title>パスワードを忘れた場合</title>
+</head>
+<body>
+	<form name="form" action="#" method="post">
+		<div id="tbl">
+			<dl>
+				<dt>ID</dt>
+				<dd>
+					<small id="id" style="display: none; color: #ea5506;"> 【名前を入力して下さい】</small>
+					<input type="text" class="lbox" name="id" placeholder="ID" size="20"/>
+				</dd>
+			</dl>
+			<dl>
+				<dt>メールアドレス</dt>
+				<dd>
+					<small id="id" style="display: none; color: #ea5506;"> 【メールアドレスを入力して下さい】</small>
+					<input type="text" class="lbox" name="mail"  placeholder="mail" size="20"/>
+				</dd>
+			</dl>
+			<dl>
+				<dt>秘密の質問①</dt>
+				<dd>
+					<small id="id" style="display: none; color: #ea5506;"> 【秘密の質問①を選択して下さい】</small>
+					<select class="lbox" name="1">
+						<option value="">秘密の質問①を選択してください</option>
+						<option value="11">母の旧姓は？</option>
+						<option value="12">初めて飼ったペットの名前は？</option>
+						<option value="13">初恋の人の名前は？</option>
+						<option value="14">電話番号下4桁</option>
+						<option value="15">初めて取った資格の名前とレベルは？</option>
+						<option value="16">本籍地は？</option>
+						<option value="17">好きなうまい棒の味は？</option>
+					</select>
+				</dd>
+			</dl>
+			<dl>
+				<dt></dt>
+				<dd>
+					<small id="id" style="display: none; color: #ea5506;"> 【秘密の質問①を入力して下さい】</small>
+					<input type="text" class="lbox" name="A1"  placeholder="秘密の質問①の答えを入力してください" size="20"/>
+				</dd>
+			</dl>
+			<dl>
+				<dt>秘密の質問②</dt>
+				<dd>
+					<small id="id" style="display: none; color: #ea5506;"> 【秘密の質問②を選択して下さい】</small>
+					<select class="lbox" name="2">
+						<option value="">秘密の質問②を選択してください</option>
+						<option value="21">初めての海外旅行で行った国は？</option>
+						<option value="22">卒業した小学校の名前は？</option>
+						<option value="23">自分が生まれた病院の名前は？</option>
+						<option value="24">免許の番号下4桁</option>
+						<option value="25">初任給で買ったものは？</option>
+						<option value="26">親友の名前は？</option>
+						<option value="27">初めて買った車は？</option>
+					</select>
+				</dd>
+			</dl>
+			<dl>
+				<dt></dt>
+				<dd>
+					<small id="id" style="display: none; color: #ea5506;"> 【秘密の質問②を入力して下さい】</small>
+					<input type="text" class="lbox" name="A2"  placeholder="秘密の質問②の答えを入力してください" size="20"/>
+				</dd>
+			</dl>
+			<div class="btn">
+				<input type="submit" name="forget" value="パスワード変更画面へ"/>
+			</div>
+		</div>
+	</form>
+</body>
+</html>

@@ -1,0 +1,57 @@
+﻿@charset "UTF-8";
+@import url("normalize.css");
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	background-image:url("../image/backimg2.jpg");
+}
+
+/* スライダー・高さは使う画像に合わせて設定 */
+.slider {
+	clear: both;
+	height: 450px;
+	width: 1500px;
+	padding: 5px 0px;
+	margin: 0 auto;
+}
+/* メインコンテンツ */
+.text_wrapper {
+	clear: both;
+	width: 800px;
+	overflow: hidden;
+	padding: 20px;
+	margin: 20px auto;
+}
+.text_wrapper p {
+	font-size: 1.2em;
+	line-height: 2;
+	color: #888;
+}
+.news{
+	margin: 0 10px;
+	width: 940px;
+	height: 500px;
+	overflow: scroll;
+	background-color: #595757;
+	float: left;
+}
+.twitter{
+	margin: 0 10px;
+	height: 500px;
+	float: left;
+}
+/* フッター */
+.footer {
+	clear: both;
+}
+.footer_copyright {
+	width: 300px;
+	height: 200px;
+	float: left;
+	position: relative;
+}
+.footer_copyright small {
+	position: absolute;
+	bottom: 20px;
+}

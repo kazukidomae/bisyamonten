@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+#modal-content {
+	background: #fff;
+	color: #ffffff;
+	width: 710px;
+	height: 480px;
+	margin: 0 ;
+	padding: 10px 20px ;
+	border: 2px solid #aaa ;
+	position: fixed ;
+	display: none ;
+	z-index: 2 ;
+}
+
+
+.opus{
+	height: 180px;
+	width: 200px;
+	margin: 5px;
+}
+
+div.oups p{
+	margin: 0px;
+}
+div.opus a{
+	margin: 0 10px;
+}
+
+div.opus pre{
+	margin: 0 0 30px 0;
+}
+
+div.favorite p{
+	margin: 0 34px;
+	float: left;
+}
+
+#favorite{
+	margin: 0 auto;
+	width: 300px;
+	height: 100px;
+}
+
+#gallery{
+	width: 300px;
+	position: relative;
+	top: 30px;
+	left: 25px;
+}
+
+.contentsize{
+	width: 350px;
+	height: 440px;
+	float:left;
+	margin: 5px 5px 1px auto;
+}
+
+
+.favorite{
+	width: 50px;
+	height: 50px;
+	margin: 0 20px;
+	float: left;
+}
+
+/* ボタン設定 */
+
+#modal-close {
+	background: #a99977;
+	border: none;
+	color: #000;
+	font-weight: bold;
+	height: 40px;
+	line-height: 40px;
+	width: 40px;
+	display: block;/*ブロック要素として表示する*/
+	text-align: center;
+	border-radius : 10px;
+	cursor: pointer;/*カーソルの変更*/
+	outline:none;/*クリック時の枠線を消す*/
+	position: absolute;
+	top: -20px;
+	left: 720px;
+	clear: both;
+
+}
+#modal-close:hover {
+	background: #b2b2b2;
+}
+
+#capbutton{
+	background: #a99977;
+	color : #000;
+	font-weight: bold;
+	height: 40px;
+	line-height: 40px;
+	width: 150px;
+	display: block;/*ブロック要素として表示する*/
+	margin: 10px auto ;/*センターに表示*/
+	text-align: center;
+	border-radius : 10px;
+	cursor: pointer;/*カーソルの変更*/
+	outline:none;/*クリック時の枠線を消す*/
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif;
+	position:relative;
+	top : 400px;
+}
+
+#capbutton:hover {
+	#capbutton: #b2b2b2;
+}
+
+

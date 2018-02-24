@@ -1,0 +1,70 @@
+@CHARSET "UTF-8";
+/*背景画像*/
+body{
+	background-image : url("../image/backimg.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #000000;
+}
+
+/*コンテンツエリア設定*/
+.wrapper {
+    width: 1200px;
+    margin : 0 auto;
+}
+
+/*タブ全体設定*/
+#tabmenu{
+    position:relative;
+    clear:both;
+    padding:0px;
+    //margin:20px 0;
+    width:1200px;
+    color:#000;
+}
+/*タブボタン設定*/
+#tab a{
+    float: left;
+    width: 195px;
+    height: 40px;
+    margin : 0 2.5px;
+	font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    text-decoration:none;
+    color:#fff;
+    background:#595757;
+	/*明朝体指定*/
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif;
+	text-align : center;
+	vertical-align: middle;
+	list-style : none;
+	//background: #a99977;
+}
+#tab_contents{
+    width:1200px;
+    overflow:hidden;
+    clear:both;
+}
+/*ページエリア全体設定*/
+#tab_page {
+    width:7200px;
+    padding:0px;
+    margin:0px;
+    }
+/*個別ページエリア設定*/
+#tab_page div{
+    float: left;
+    width:1200px;
+    //padding:0px  50px  0px 50px;
+    list-style-type:none;
+    background:#595757;
+}
+/*マウスオーバー時アクション*/
+#tabmenu div#tab a:hover{
+    background: #000;
+}

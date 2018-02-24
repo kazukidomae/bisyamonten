@@ -1,0 +1,83 @@
+@CHARSET "UTF-8";
+
+/*全体設定*/
+.wapper{
+	width : 100%;
+}
+/*展開図全体設定*/
+.tenkaizu_wapper{
+	width : 100%;
+	background : #595757;
+	//transform: scale3d(0.5,0.5,0.5);
+}
+
+/*展開図設定*/
+#tenkaizu
+{
+	margin : 50px 0 0 0;
+	background : #595757;
+	width:100%;
+	height : 2048px;
+	background-image:url(../images/vezel_uv_whitefinal.png);
+	background-repeat:no-repeat;
+}
+/*ゴミ箱エリア*/
+#dustbox
+{
+	position:fixed;
+	top:200px;
+	left:1300px;
+	width:200px;
+	height:200px;
+	background : url(../image/dustbox.png)
+}
+#output
+{
+	position:absolute;
+	top:1560px;
+	left:0px;
+	width:200px;
+	height:200px;
+	overflow:hidden;
+}
+/* ステッカー下部に表示させる回転ボタンのスタイル。 */
+#rotatebut
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:95px;
+	height:37px;
+	background-image:url(../images/rotate.png);
+	z-index:999;
+}
+/*保存ボタン*/
+p,#button {
+	position:fixed;
+	top:200px;
+	left:1280px;
+}
+p,#button input[type="button"] {
+	border: none;
+	font-size: 25px;
+	width : 150px;
+	margin : 10px;
+	text-align: center;
+	border-radius : 10px;
+	/*明朝体指定*/
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif;
+	text-align : center;
+	vertical-align: middle;
+	list-style : none;
+	background: #a99977;
+	position: static;
+}
+#formarea input[type="button"]{
+	height : 40px;
+	font-size : 19px;
+}
+p,#button input[type="button"]:hover {
+	background: #8a8b8c;
+	cursor: pointer ;
+}
+

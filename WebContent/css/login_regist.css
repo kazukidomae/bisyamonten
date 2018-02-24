@@ -1,0 +1,139 @@
+@CHARSET "UTF-8";
+
+body{
+	background-image:url("../image/top_img.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #000000;
+}
+
+dl{
+	padding: 5px 25px;
+}
+
+dd{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.btn { /*送信ボタン位置設定*/
+	padding: 20px 0;
+}
+/* 入力エラーメッセージのスタイル。 */
+.inserrmsg
+{
+	color:#ff0000;
+	font-size:13px;
+	font-weight:bold;
+	line-height:1.3em;
+}
+
+#wrap{
+	width:250px;
+	height:250px;
+	margin-left: auto;
+	padding: 5%;
+}
+
+#tbl{
+	background-color:rgba(213,210,207,0.5);
+	border-radius: 10px;
+	margin: 0 6px;
+	padding: 5px;
+}
+
+.forget{
+	margin: 0 15px;
+	font-size: 70%;
+	color: #040d72;
+}
+
+/* フォーム設定 */
+input[type="text"], textarea {
+	padding: 8px;
+	border: solid 1px #ccc;
+	margin: 0 auto;
+	width: 160px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+input[type="password"], password {
+	padding: 8px;
+	border: solid 1px #ccc;
+	margin: 0 auto;
+	width: 160px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+input[type="submit"] {
+	background: #a99977;
+	border: none;
+	color: #000;
+	font-weight: bold;
+	height: 40px;
+	line-height: 40px;
+	width: 150px;
+	display: block;/*ブロック要素として表示する*/
+	margin: 0 auto;/*センターに表示*/
+	text-align: center;
+	border-radius : 10px;
+	cursor: pointer;/*カーソルの変更*/
+	outline:none;/*クリック時の枠線を消す*/
+}
+input[type="submit"]:hover {
+	background: #b2b2b2;
+}
+
+input[type="button"] {
+	background: #a99977;
+	border: none;
+	color: #000;
+	font-weight: bold;
+	height: 40px;
+	line-height: 40px;
+	width: 150px;
+	display: block;/*ブロック要素として表示する*/
+	margin: 15px auto;/*センターに表示*/
+	text-align: center;
+	border-radius : 10px;
+	cursor: pointer;/*カーソルの変更*/
+	outline:none;/*クリック時の枠線を消す*/
+}
+input[type="button"]:hover {
+	background: #b2b2b2;
+}
+
+/* フォーカス設定 */
+input[type="text"], textarea {
+	outline: none;
+	border: 1px solid #aaa;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+input[type="text"]:focus, textarea:focus {
+	box-shadow: 0 0 7px #528fcc;
+	border: 1px solid #528fcc;
+}
+
+input[type="password"], password {
+	outline: none;
+	border: 1px solid #aaa;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+input[type="password"]:focus, password:focus {
+	box-shadow: 0 0 7px #528fcc;
+	border: 1px solid #528fcc;
+}
+
+
+/* オートコンプリート使用後の背景色指定（自動入力されchromeでは黄色になる）*/
+input:-webkit-autofill {
+ box-shadow: 0 0 0 1000px #fff inset;
+}

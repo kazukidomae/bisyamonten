@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+
+/*コピーライト設定*/
+footer {
+	clear : both;
+	background: #a99977;
+	color : #000;
+	text-align : center;
+    /*明朝体指定*/
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif;
+
+}

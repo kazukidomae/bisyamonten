@@ -1,0 +1,177 @@
+@CHARSET "UTF-8";
+
+#wapper{
+	width :1200px;
+	margin : 0 auto;
+	padding : 50px;
+}
+
+/*購入ステッカー一覧*/
+#price{
+	float: left;
+	width: 680px;
+	background: #595757;
+	margin : 10px;
+}
+#viewer{
+	width : 700px;
+}
+#viewer img{
+	width: 300px;
+	height: 191px;
+	margin : 0 auto;
+	border : solid 10px #a99977;
+}
+
+#subtotal table th{
+	width: 108.9px;
+	background: #a99977;
+	text-align : center;
+	border : solid 1px #fff;
+	padding : 5px 0;
+	font-size : 17px;
+	/*明朝体指定*/
+	//font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif;
+}
+#detail{
+	overflow-y : scroll;
+	height : 84px;
+}
+#subtotal table td{
+	color : #fff;
+	width: 108.9px;
+	text-align : center;
+	border : solid 1px #fff;
+}
+
+#subtotal{
+}
+
+/*支払い方法*/
+dt{
+
+	font-size : 20px;
+	text-align : right;
+	padding-top : 10px;
+	padding-bottom : 10px;
+	padding-left : 10px;
+	width : 80px;
+	float : left;
+	clear : both;
+}
+
+dd{
+	padding : 10px;
+	width : 310px;
+	margin-left : 110px;/* DTの幅分の設定 */
+	font-size : 20px;
+}
+
+#shipping{
+	width:500px;
+	float: right;
+	margin:0 auto;
+	color: #ffffff;
+}
+#pay{
+	background: #595757;
+	width: 480px;
+	margin : 10px;
+}
+
+/*配送先*/
+#address{
+	background: #595757;
+	width: 480px;
+	margin : 10px;
+}
+
+
+/* フォーム設定 */
+input, button, textarea, select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* ラジオボタン */
+input[type="text"], textarea {
+	padding: 8px;
+	border: solid 1px #ccc;
+	margin: 2px;
+	width: 300px;
+	position: relative;
+	left: 10px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+input[type="submit"] {
+	background: #a99977;
+	border: none;
+	color : #000;
+	font-weight: bold;
+	height: 40px;
+	line-height: 40px;
+	width: 150px;
+	display: block;
+	margin: 0 auto ;
+	//position: relative;
+	//top: 35px;
+	text-align: center;
+	border-radius : 10px;
+	cursor: pointer;
+	outline:none;
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif;
+}
+input[type="submit"]:hover {
+	background: #b2b2b2;
+}
+
+input[type="button"] {
+	background: #a99977;
+	border: none;
+	color : #000;
+	font-weight: bold;
+	height: 40px;
+	line-height: 40px;
+	width: 150px;
+	display: block;/*ブロック要素として表示する*/
+	margin: 10px auto ;/*センターに表示*/
+	text-align: center;
+	border-radius : 10px;
+	cursor: pointer;/*カーソルの変更*/
+	outline:none;/*クリック時の枠線を消す*/
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif;
+}
+input[type="button"]:hover {
+	background: #b2b2b2;
+}
+
+/* フォーカス設定 */
+radio{
+	outline: none;
+	border: 1px solid #aaa;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+radio:focus {
+	box-shadow: 0 0 7px #528fcc;
+	border: 1px solid #528fcc;
+}
+
+input[type="text"], textarea {
+	outline: none;
+	border: 1px solid #aaa;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+input[type="text"]:focus, textarea:focus {
+	box-shadow: 0 0 7px #528fcc;
+	border: 1px solid #528fcc;
+}
+
+/* オートコンプリート使用後の背景色指定（自動入力されchromeでは黄色になる）*/
+input:-webkit-autofill {
+ box-shadow: 0 0 0 1000px #fff inset;
+}

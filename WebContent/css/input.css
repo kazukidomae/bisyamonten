@@ -1,0 +1,145 @@
+@CHARSET "UTF-8";
+dl{
+	padding: 5px 25px;
+}
+
+dt, dd {
+	display: table-cell; /*セルの横並び*/
+	vertical-align: middle; /*上下中央並び*/
+}
+
+dt { /*左タイトル*/
+	width: 200px;
+	text-align: right;
+	padding: 0 10px;
+    color: #ffffff;
+}
+
+p {
+	margin: 10px 30px;
+    color: #ffffff;
+}
+
+form{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#pc{
+	margin: 45px auto;
+	width:700px;
+	height:200px;
+	background-color:rgba(213,210,207,0.5);
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.up{
+	margin: 10px auto;
+	width:700px;
+	height:300px;
+}
+
+.info{
+	margin: 10px auto;
+	width:700px;
+	height:560px;
+	padding: 5px;
+}
+
+#tbl{
+	margin: 45px auto;
+	width:700px;
+	height:450px;
+	background-color:rgba(213,210,207,0.5);
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.forget{
+	margin: 0 15px;
+	text-align: center;
+	font-size: 90%;
+	color: #040d72;
+}
+
+/* フォーム設定 */
+
+select{
+	padding: 8px;
+	border: solid 1px #ccc;
+	margin: 0 auto;
+	width: 270px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+input[type="password"], textarea {
+	padding: 8px;
+	border: solid 1px #ccc;
+	margin: 0 auto;
+	width: 250px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+input[type="text"], textarea {
+	padding: 8px;
+	border: solid 1px #ccc;
+	margin: 0 auto;
+	width: 250px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+input[type="submit"] {
+	background: #303030;
+	border: none;
+	color: #fff;
+	font-weight: bold;
+	height: 40px;
+	line-height: 40px;
+	width: 150px;
+	display: block;/*ブロック要素として表示する*/
+	margin: 0 auto;/*センターに表示*/
+	text-align: center;
+	border-radius : 10px;
+	cursor: pointer;/*カーソルの変更*/
+	outline:none;/*クリック時の枠線を消す*/
+}
+input[type="submit"]:hover {
+	background: #8a8b8c;
+	cursor: pointer ;
+}
+
+/* フォーカス設定 */
+select{
+	outline: none;
+	border: 1px solid #aaa;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+select:focus {
+	box-shadow: 0 0 7px #528fcc;
+	border: 1px solid #528fcc;
+}
+
+input[type="text"], textarea {
+	outline: none;
+	border: 1px solid #aaa;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+input[type="text"]:focus, textarea:focus {
+	box-shadow: 0 0 7px #528fcc;
+	border: 1px solid #528fcc;
+}
+
+/* オートコンプリート使用後の背景色指定（自動入力されchromeでは黄色になる）*/
+input:-webkit-autofill {
+ box-shadow: 0 0 0 1000px #fff inset;
+}
